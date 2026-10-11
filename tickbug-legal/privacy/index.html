@@ -19,7 +19,7 @@
   <main>
     <article class="panel">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: June 5, 2026</p>
+      <p class="muted">Last updated: October 11, 2026</p>
       <p>This Privacy Policy explains how TickBug handles information when you use the iOS app.</p>
 
       <h2>Information You Choose to Provide</h2>
@@ -32,7 +32,11 @@
       <p>Journal entries, profiles, settings, and saved photos are stored locally in the app sandbox on your device. TickBug does not operate user accounts in this version.</p>
 
       <h2>Recognition Service</h2>
+<p>The recognition service uses Supabase for the server-side proxy and Anthropic Claude for image analysis. A recognition request includes the selected photo, subject type (tick or bite), general region, and app language. Do not include faces or identifying details in a photo unless they are necessary for your request. See <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy information</a> for information about its processing.</p>
       <p>When remote recognition is enabled, TickBug sends the photo, selected subject type, selected region, and app language to a server-side recognition proxy. The proxy is used to call a vision model without placing model API keys in the app. The service is designed to process the request and return a structured result, not to create user profiles or sell photo data.</p>
+
+      <h2>AI Provider Retention</h2>
+      <p>Anthropic may retain API inputs and outputs for up to 30 days, subject to the exceptions described in its <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">commercial data-retention policy</a>. TickBug does not claim that a zero-data-retention agreement applies. Avoid including faces, names or other identifying details in photos.</p>
 
       <h2>Notifications</h2>
       <p>If you save a scan with a symptom-watch window and allow notifications, TickBug schedules local reminders on your device. You can change notification permission in iOS Settings.</p>
@@ -40,7 +44,9 @@
       <h2>Purchases</h2>
       <p>Premium purchases are processed by Apple through StoreKit. We do not receive or store your payment card number.</p>
 
-      <h2>Tracking and Advertising</h2>
+      <h2>Product Analytics</h2>
+<p>TickBug sends usage events to its Supabase analytics service to understand reliability and improve the app. These include app opens, scan outcomes, errors, journal saves, paywall visits and purchase outcomes, together with random installation and session identifiers, timestamps, app version and language. Profile names, journal text and photos are not included in these analytics events. Installation identifiers are pseudonymous and can link events from the same installation.</p>
+<h2>Tracking and Advertising</h2>
       <p>We do not sell personal information and do not use TickBug data to track you across apps or websites owned by other companies for advertising purposes.</p>
 
       <h2>Medical and Veterinary Disclaimer</h2>
